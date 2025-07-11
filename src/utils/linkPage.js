@@ -1,12 +1,11 @@
-export function linkPage() {
-  document.addEventListener("DOMContentLoaded", () => {
-    const boton = document.getElementById("miElemento"); // usa el ID correcto
-    if (boton) {
-      boton.addEventListener("click", () => {
-        console.log("Botón clicado");
-      });
-    } else {
-      console.warn("No se encontró el elemento con id 'miElemento'");
-    }
-  });
-}
+export const linkPage = (id, page) => {
+  const link = document.querySelector(id);
+  if (link) {
+    link.addEventListener("click", (e) => {
+      e.preventDefault(); // <--- importante para evitar recarga
+      page(); // ejecuta la función asociada
+    });
+  } else {
+    console.warn(`No se encontró el elemento con el selector: ${id}`);
+  }
+};

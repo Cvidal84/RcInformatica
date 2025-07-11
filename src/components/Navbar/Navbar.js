@@ -22,10 +22,10 @@ export const Navbar = () => `
 <h2>RcInformática</h2>
 <ul>
     <li>
-        <a href="#" id="home">Principal</a>
+        <a href="#" id="homelink">Principal</a>
     </li>
     <li>
-        <a href="#" id="cursos">Cursos</a>
+        <a href="#" id="courseslink">Cursos</a>
     </li>
     <li>
         <a href="#" id="kit-digital">Kit Digital</a>
