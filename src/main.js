@@ -1,5 +1,5 @@
 import './style.css'
-import { changeTheme} from "./components/Navbar/Navbar";
+import { changeTheme, setupHamburger} from "./components/Navbar/Navbar";
 import { linkPage } from "./utils/linkPage";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
@@ -20,5 +20,6 @@ linkPage("#mantlink", Maintenances);
 Home();
 
 changeTheme();
+setupHamburger();
 
 footer.insertAdjacentHTML("beforebegin", Divider());

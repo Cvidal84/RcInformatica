@@ -1,34 +1,20 @@
 .home {
-  padding: 0 8rem;
-  height: 80vh;
+  padding: 0 4rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-items: flex-start;
-  gap: 3rem;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: 100;
+  z-index: 100; 
+  gap: 5rem;
 }
 
-@media (max-width: 700px) {
-  .home {
-    padding: 0 2rem;
-  }
+.home > p {
+  font-size: 1.5rem;
 }
-
-.home > h1 {
-  font-size: 5.5rem;
-  background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.home > a {
+.home > a{
   font-size: 1.5rem;
 }
 .logorc{
@@ -36,6 +22,22 @@
   transition: all 0.4s ease-in-out;
   animation: glowPulse 2s infinite ease-in-out;
   cursor: pointer;
+  padding-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  .home {
+    margin-top: 10vh;
+    padding: 0;
+    position: static;
+    
+  }
+  .logorc{
+    width: 300px;
+    margin-top: 5rem;
+    padding-top: 0;
+  
+  }
 }
 
  @keyframes glowPulse {
@@ -67,7 +69,7 @@
 }
 /* Estrellas para el fondo */
 .stars {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

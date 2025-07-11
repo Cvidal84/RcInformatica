@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap");
 
 :root {
-  --primary-dark: whitesmoke;
+  --primary-dark: #05d8fd;
   --bg-dark: #111111;
   --primary-light: #111111;
-  --bg-light: whitesmoke;
+  --bg-light: rgb(255, 255, 255);
   --highlight: #6cace4;
-  --divider: rgb(164, 164, 164);
+  --divider: rgb(255, 255, 255);
 }
 
 * {

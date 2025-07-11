@@ -40,5 +40,5 @@
 }
 
 .course-card > .detail > .tech {
-  color: var(--highlight);
+  color: var(--primary-dark);
 }

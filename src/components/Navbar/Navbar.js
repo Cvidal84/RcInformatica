@@ -17,10 +17,20 @@ export const changeText = () => {
   }
 };
 
+export const setupHamburger = () => {
+  const hamburgerBtn = document.querySelector("#hamburgerBtn");
+  const navLinks = document.querySelector("#navLinks");
+
+  hamburgerBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+};
+
 export const Navbar = () => `
 <nav>
 <h2>RcInformática</h2>
-<ul>
+<button class="hamburger" id="hamburgerBtn">☰</button>
+<ul id="navLinks">
     <li>
         <a href="#" id="homelink">Principal</a>
     </li>
@@ -39,3 +49,4 @@ export const Navbar = () => `
 </ul>
 </nav>
 `;
+

@@ -1,21 +1,6 @@
 import "./Home.css";
 import { cleanPage } from "../../utils/cleanPage";
 
-export const Home = () => {
-  const main = document.querySelector("main");
-  cleanPage(main);
-  main.innerHTML = `
-    <div class="stars"></div>
-    <section class="home">
-    <img src="/icons/logorc.png" alt="Logotico RcInformatica" class="logorc">
-    <p>
-    Bienvenido a <strong>RcInformática</strong>, una empresa tecnológica con amplia experiencia en el sector. Ofrecemos servicios de mantenimiento informático, telecomunicaciones y formación especializada en nuestra academia. Nos enorgullece brindar una atención cercana y personalizada, ayudándote a resolver cualquier duda o necesidad tecnológica. Estamos encantados de acompañarte. ¿Empezamos?
-    </p>
-    <a href="mailto:admin@rcinformatica.com">Contactar con nosotros →</a>
-    </section>`;
-
-    generateStars();
-};
 // funcion para generar estrellas
 function generateStars(quantity = 1000) {
   const starsContainer = document.querySelector(".stars");
@@ -29,3 +14,19 @@ function generateStars(quantity = 1000) {
     starsContainer.appendChild(star);
   }
 }
+
+export const Home = () => {
+  const main = document.querySelector("main");
+  cleanPage(main);
+  main.innerHTML = `
+    <div class="stars"></div>
+    <section class="home">
+    <img src="/icons/logorc.png" alt="Logotico RcInformatica" class="logorc">
+    <p>
+    Bienvenido a <strong>RcInformática</strong>, una empresa tecnológica con amplia experiencia en el sector. Ofrecemos servicios de mantenimiento informático, telecomunicaciones y formación especializada en nuestra academia. Nos enorgullece brindar una atención cercana y personalizada, ayudándote a resolver cualquier duda o necesidad tecnológica. Estaremos encantados de acompañarte. ¿Empezamos?
+    </p>
+    <a href="mailto:admin@rcinformatica.com">Mándanos un email →</a>
+    </section>`;
+
+    generateStars();
+};
