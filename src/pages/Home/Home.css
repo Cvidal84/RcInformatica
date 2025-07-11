@@ -4,11 +4,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: flex-start;
   gap: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 100;
 }
 
 @media (max-width: 700px) {
@@ -31,13 +34,61 @@
 .logorc{
   width: 400px;
   transition: all 0.4s ease-in-out;
-}
-.logorc:hover{
-  filter:
-    brightness(1.5)
-    drop-shadow(0 0 20px white)
-    drop-shadow(0 0 30px cyan)
-    drop-shadow(0 0 40px blue);
-  transform: scale(1.05);
+  animation: glowPulse 2s infinite ease-in-out;
   cursor: pointer;
+}
+
+ @keyframes glowPulse {
+  0%, 100% {
+    filter:
+      brightness(1.1)
+      drop-shadow(0 0 5px white)
+      drop-shadow(0 0 5px cyan)
+      drop-shadow(0 0 10px blue);
+  }
+  50% {
+    filter:
+      brightness(1.6)
+      drop-shadow(0 0 10px white)
+      drop-shadow(0 0 20px cyan)
+      drop-shadow(0 0 30px blue);
+  }
+}
+
+.logorc:hover {
+  animation: none;
+  transform: scale(1.1);
+  filter:
+    brightness(2)
+    drop-shadow(0 0 25px white)
+    drop-shadow(0 0 35px cyan)
+    drop-shadow(0 0 40px blue)
+    drop-shadow(0 0 45px violet);
+}
+/* Estrellas para el fondo */
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background: transparent;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out alternate;
+}
+body.light .star {
+  background-color: rgb(8, 239, 247);
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.2; transform: scale(1); }
+  100% { opacity: 0.9; transform: scale(1.3); }
 }

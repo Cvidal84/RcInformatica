@@ -16,6 +16,7 @@ nav {
 nav > ul {
   display: flex;
   gap: 3rem;
+  align-items: center;
 }
 
 nav button {
@@ -32,3 +33,86 @@ nav a {
 nav a:hover {
   color: var(--highlight);
 }
+
+/* switch */
+label, #themeBtn {
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+}
+
+label {
+  animation: float74 4s ease-in-out infinite;
+}
+
+/* Animación suave de flotación */
+@keyframes float74 {
+  from, to {
+    transform: translate(0, 3%);
+  }
+  25% {
+    transform: translate(-3%, 0);
+  }
+  50% {
+    transform: translate(0, -3%);
+  }
+  75% {
+    transform: translate(3%, 0);
+  }
+}
+
+/* Botón estilo burbuja limpio */
+#themeBtn {
+  background-color: white;
+  background-image: radial-gradient(8% 8% at 22% 28%, white 45%, transparent 50%);
+  cursor: pointer;
+  position: relative;
+  width: 3em;
+  height: 3em;
+  border: none;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease-in-out, width 0.2s ease, height 0.2s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  z-index: 0;
+  box-shadow: none;
+}
+
+/* Decoración interna del botón */
+#themeBtn::before {
+  content: "";
+  position: absolute;
+  border-radius: 0.75em;
+  background-color: rgba(255, 255, 255, 0.4);
+  top: 50%;
+  left: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  box-shadow: 0 0 32px 15px rgba(255, 255, 255, 0.8);
+  filter: blur(1px);
+}
+
+
+/* Al hacer clic (active) */
+#themeBtn:active {
+  width: 3.2em;
+  height: 2.8em;
+}
+
+/* Estilo cuando está activado (modo claro) */
+#themeBtn:checked {
+  background-color: #05d8fd;
+  background-image: none;
+  box-shadow: 0 0 12px 6px rgba(0, 200, 255, 0.8);
+}
+
+/* Cambio del "nucleo" de dentro cuando esta activo */
+#themeBtn:checked::before {
+  background-color: #ffffff;
+  width: 0.6em;
+  border-radius: 0.25em;
+  box-shadow: 0 0 12px 6px rgba(0, 200, 255, 0.8);
+}
+

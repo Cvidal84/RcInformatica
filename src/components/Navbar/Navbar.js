@@ -28,10 +28,13 @@ export const Navbar = () => `
         <a href="#" id="courseslink">Cursos</a>
     </li>
     <li>
+        <a href="#" id="mantlink">Mantenimientos</a>
+    </li>
+    <li>
         <a href="#" id="kit-digital">Kit Digital</a>
     </li>
     <li>
-        <button id="themeBtn">☀</button>
+      <label><input value="on" name="dummy" type="checkbox" id="themeBtn"></label>
     </li>
 </ul>
 </nav>

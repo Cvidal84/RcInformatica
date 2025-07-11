@@ -5,6 +5,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
 import { Home } from "./pages/Home/Home";
 import { Courses } from "./pages/Courses/Courses";
+import { Maintenances } from "./pages/Maintenances/Maintenances";
 import { Divider } from "./components/Divider/Divider";
 
 const header = document.querySelector("header");
@@ -14,6 +15,7 @@ footer.innerHTML = Footer();
 
 linkPage("#homelink", Home);
 linkPage("#courseslink", Courses);
+linkPage("#mantlink", Maintenances);
 
 Home();
 

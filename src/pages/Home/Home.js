@@ -5,9 +5,27 @@ export const Home = () => {
   const main = document.querySelector("main");
   cleanPage(main);
   main.innerHTML = `
+    <div class="stars"></div>
     <section class="home">
     <img src="/icons/logorc.png" alt="Logotico RcInformatica" class="logorc">
-    <p>Bienvenidos a nuestra RcInformática, empresa tecnológica con muchos años de experiencia en el sector. Nos dedicamos tanto a manteniminentos informáticos, telecomunicaciones o clases en nuestra academia de informática. Bienvenido a nuestra gran familia, donde podrás tratar con personas cercanas para resolver todas tus dudas o problemas. Encantados de tratar contigo, empezamos??</p>
+    <p>
+    Bienvenido a <strong>RcInformática</strong>, una empresa tecnológica con amplia experiencia en el sector. Ofrecemos servicios de mantenimiento informático, telecomunicaciones y formación especializada en nuestra academia. Nos enorgullece brindar una atención cercana y personalizada, ayudándote a resolver cualquier duda o necesidad tecnológica. Estamos encantados de acompañarte. ¿Empezamos?
+    </p>
     <a href="mailto:admin@rcinformatica.com">Contactar con nosotros →</a>
     </section>`;
+
+    generateStars();
 };
+// funcion para generar estrellas
+function generateStars(quantity = 1000) {
+  const starsContainer = document.querySelector(".stars");
+  for (let i = 0; i < quantity; i++) {
+    const star = document.createElement("div");
+    star.classList.add("star");
+    star.style.top = `${Math.random() * 100}%`;
+    star.style.left = `${Math.random() * 100}%`;
+    star.style.width = star.style.height = `${Math.random() * 2 + 1}px`;
+    star.style.opacity = Math.random();
+    starsContainer.appendChild(star);
+  }
+}
