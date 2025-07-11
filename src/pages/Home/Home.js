@@ -6,15 +6,8 @@ export const Home = () => {
   cleanPage(main);
   main.innerHTML = `
     <section class="home">
-    <p>Hey, I'm</p>
-    <h1>Peter Parker</h1>
-    <p>I'm a software engineer based in Toronto, 
-    Canada and also a communication and journalism student. 
-    I enjoy creating things that live on the internet, 
-    whether that be websites, applications, or anything in between. 
-    I have been freelancing for a year now while studying at the university and 
-    I've manage to gain a decent amount of experience and valuable knowledge 
-    from all different kinds of fields throughout my projects/work.</p>
-    <a href="mailto:peterparker@gmail.com">Say hi →</a>
+    <img src="/icons/logorc.png" alt="Logotico RcInformatica" class="logorc">
+    <p>Bienvenidos a nuestra RcInformática, empresa tecnológica con muchos años de experiencia en el sector. Nos dedicamos tanto a manteniminentos informáticos, telecomunicaciones o clases en nuestra academia de informática. Bienvenido a nuestra gran familia, donde podrás tratar con personas cercanas para resolver todas tus dudas o problemas. Encantados de tratar contigo, empezamos??</p>
+    <a href="mailto:admin@rcinformatica.com">Contactar con nosotros →</a>
     </section>`;
 };
