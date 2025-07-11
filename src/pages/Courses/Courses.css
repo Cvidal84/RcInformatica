@@ -1,0 +1,33 @@
+.courses {
+  padding: 0 8rem;
+  min-height: 80vh;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 770px) {
+  .courses {
+    padding: 0 2rem;
+  }
+}
+
+.courses > h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 8rem;
+}
+
+@media (max-width: 770px) {
+  .courses-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

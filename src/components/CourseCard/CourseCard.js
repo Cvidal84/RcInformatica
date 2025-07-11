@@ -10,7 +10,7 @@ export const CourseCard = (course) => `
 <img src="/icons/github.png" alt="GitHub Icon" />
 </a>
 <a href=${course.link}>
-<img src="/icons/link.png" alt="Link icon" />
+<img src="/icons/clip.png" alt="Link icon" />
 </a>
 </div>
 </div>

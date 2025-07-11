@@ -28,6 +28,9 @@ export const Navbar = () => `
         <a href="#" id="cursos">Cursos</a>
     </li>
     <li>
+        <a href="#" id="kit-digital">Kit Digital</a>
+    </li>
+    <li>
         <button id="themeBtn">☀</button>
     </li>
 </ul>
