@@ -7,9 +7,14 @@ nav {
   text-align: center;
   padding: 0 2rem;
   flex-wrap: wrap;
+  color: var(--bg-light);
+}
+body.light nav{
+  color: var(--bg);
 }
 nav > h2 {
   font-size: 2rem;
+  color: var(--primary-dark);
 }
 
 nav > ul {

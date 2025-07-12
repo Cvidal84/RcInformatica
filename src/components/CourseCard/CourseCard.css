@@ -1,8 +1,13 @@
 .course-card {
   width: 100%;
+  min-height: 550px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 1rem;
+  border: solid 3px var(--primary-dark);
+  border-radius: 8px;
 }
 
 .course-card img {
@@ -14,7 +19,7 @@
 .course-card > .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .course-card > .header > div {
@@ -37,6 +42,10 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  color: white;
+}
+body.light .course-card > .detail {
+  color: black;
 }
 
 .course-card > .detail > .tech {

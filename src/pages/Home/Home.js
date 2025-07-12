@@ -23,8 +23,8 @@ export const Home = () => {
     <section class="home">
     <img src="/icons/logorc.png" alt="Logotico RcInformatica" class="logorc">
     <p>
-    Bienvenido a <strong>RcInformática</strong>, una empresa tecnológica con amplia experiencia en el sector. Ofrecemos servicios de mantenimiento informático, telecomunicaciones y formación especializada en nuestra academia. Nos enorgullece brindar una atención cercana y personalizada, ayudándote a resolver cualquier duda o necesidad tecnológica. Estaremos encantados de acompañarte. ¿Empezamos?
-    </p>
+    Bienvenido a RcInformática, una empresa tecnológica con amplia experiencia en el sector. Ofrecemos servicios de mantenimiento informático, telecomunicaciones y formación especializada en nuestra academia. Nos enorgullece brindar una atención cercana y personalizada, ayudándote a resolver cualquier duda o necesidad tecnológica. Estaremos encantados de acompañarte.</p>
+    <p>¿Empezamos?</p>
     <a href="mailto:admin@rcinformatica.com">Mándanos un email →</a>
     </section>`;
 

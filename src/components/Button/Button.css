@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--primary-dark);
+  color: white;
   width: 9rem;
   padding: 0.5rem;
   gap: 0.5rem;
@@ -15,6 +15,7 @@
 
 body.light .my-btn {
   color: var(--bg-light);
+  border: none;
 }
 
 .my-btn > img {
