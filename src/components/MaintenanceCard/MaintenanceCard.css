@@ -1,0 +1,25 @@
+.maintenance-card {
+  width: 100%;
+  min-height: 650px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  border: solid 3px var(--primary-dark);
+  border-radius: 8px;
+}
+
+.maintenance-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 0.4rem;
+  object-fit: cover;
+}
+.maintenance-card > .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+

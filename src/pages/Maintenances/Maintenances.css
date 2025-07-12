@@ -1,0 +1,15 @@
+.maintenances {
+  padding: 0 8rem;
+  min-height: 80vh;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.maintenances-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 8rem;
+}
