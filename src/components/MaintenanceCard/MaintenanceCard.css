@@ -22,4 +22,20 @@
   align-items: center;
   justify-content: center;
 }
+body.light .maintenance-card > .header {
+    color: var(--primary-dark);
+}
+
+.detail {
+    color: white;
+}
+body.light .detail{
+    color: black;
+}
+
+@media (max-width: 770px) {
+  .maintenance-card {
+    padding: 0;
+  }
+}
 

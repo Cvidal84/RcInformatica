@@ -38,20 +38,6 @@ nav a:hover {
   color: var(--highlight);
 }
 
-@media (max-width: 500px) {
-  nav {
-    padding: 10px;
-    justify-content: center;
-    width: 100%;
-    gap: 2rem;
-  }
-  nav > ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-}
-
 /* burguer menu */
 .hamburger {
   display: none;
@@ -62,6 +48,19 @@ nav a:hover {
 }
 
 @media (max-width: 500px) {
+  nav {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+  }
+  nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
   .hamburger {
     display: block;
   }
@@ -78,8 +77,10 @@ nav a:hover {
   #navLinks.show {
     display: flex;
   }
+  #hamburgerBtn {
+    padding-top: 10px;
+  }
 }
-
 
 
 /* switch */
@@ -162,5 +163,10 @@ label {
   width: 0.6em;
   border-radius: 0.25em;
   box-shadow: 0 0 12px 6px rgba(0, 200, 255, 0.8);
+}
+
+.menu-avatar{ /* imagen del menu burguer */
+  width: 30px;
+  height: 30px;
 }
 

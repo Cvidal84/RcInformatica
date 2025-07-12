@@ -13,3 +13,13 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 8rem;
 }
+
+@media (max-width: 770px) {
+    .maintenances{
+        padding: 0 2rem;
+    }
+
+    .maintenances-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

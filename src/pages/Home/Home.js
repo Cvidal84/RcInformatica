@@ -29,4 +29,14 @@ export const Home = () => {
     </section>`;
 
     generateStars();
+    // Insertar el script del chatbot si no está ya cargado
+if (!document.getElementById("chatbaseScript")) {
+  const script = document.createElement("script");
+  script.id = "chatbaseScript";
+  script.src = "https://www.chatbase.co/embed.min.js";
+  script.defer = true;
+  script.setAttribute("chatbotId", "NeX_WSCZG19Rtq0KH3Zrj");
+  script.setAttribute("domain", "rcinformatica.vercel.app");
+  document.body.appendChild(script);
+}
 };

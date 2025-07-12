@@ -29,7 +29,9 @@ export const setupHamburger = () => {
 export const Navbar = () => `
 <nav>
 <h2>RcInformática</h2>
-<button class="hamburger" id="hamburgerBtn">☰</button>
+<button class="hamburger" id="hamburgerBtn">
+    <img src="/icons/logorc.png" alt="Menú" class="menu-avatar" />
+</button>
 <ul id="navLinks">
     <li>
         <a href="#" id="homelink">Principal</a>
