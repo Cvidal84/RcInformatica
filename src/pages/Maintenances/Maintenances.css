@@ -22,4 +22,8 @@
     .maintenances-container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
+
+    .maintenances > h2 {
+      text-align: center;
+    }
 }

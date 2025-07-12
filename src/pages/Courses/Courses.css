@@ -8,12 +8,6 @@
   margin-bottom: 2rem;
 }
 
-@media (max-width: 770px) {
-  .courses {
-    padding: 0 2rem;
-  }
-}
-
 .courses-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -21,7 +15,15 @@
 }
 
 @media (max-width: 770px) {
+  .courses {
+    padding: 0 2rem;
+  }
   .courses-container {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
+  .courses > h2 {
+    text-align: center;
+  }
 }
+
+
