@@ -11,6 +11,9 @@ footer > div {
   gap: 1rem;
   flex-wrap: wrap;
 }
+.info {
+  text-align: center;
+}
 
 @media (max-width: 770px) {
   footer {
