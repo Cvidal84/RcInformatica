@@ -4,13 +4,17 @@ import { cleanPage } from "../../utils/cleanPage";
 // funcion para generar estrellas
 function generateStars(quantity = 1000) {
   const starsContainer = document.querySelector(".stars");
+  starsContainer.innerHTML = ""; // Limpia estrellas anteriores si recargas
   for (let i = 0; i < quantity; i++) {
     const star = document.createElement("div");
     star.classList.add("star");
     star.style.top = `${Math.random() * 100}%`;
     star.style.left = `${Math.random() * 100}%`;
-    star.style.width = star.style.height = `${Math.random() * 2 + 1}px`;
+    const size = Math.random() * 2 + 1;
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
     star.style.opacity = Math.random();
+    star.style.setProperty('--delay', `${Math.random() * 10}s`); // Delay aleatorio hasta 10s
     starsContainer.appendChild(star);
   }
 }

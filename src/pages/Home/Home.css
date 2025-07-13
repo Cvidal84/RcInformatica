@@ -86,6 +86,7 @@
   background: white;
   border-radius: 50%;
   animation: twinkle 2s infinite ease-in-out alternate;
+  animation-delay: var(--delay);
 }
 body.light .star {
   background-color: rgb(8, 239, 247);
