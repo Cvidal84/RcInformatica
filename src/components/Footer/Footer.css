@@ -16,7 +16,7 @@ footer > div {
   text-align: center;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 650px) {
   footer {
     padding: 0 2rem;
     gap: 2rem;

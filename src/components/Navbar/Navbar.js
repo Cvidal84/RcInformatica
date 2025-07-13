@@ -24,6 +24,13 @@ export const setupHamburger = () => {
   hamburgerBtn.addEventListener("click", () => {
     navLinks.classList.toggle("show");
   });
+  //cierra el menu al hacer click
+  const links = navLinks.querySelectorAll("a");
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+    })
+  })
 };
 
 export const Navbar = () => `

@@ -21,7 +21,7 @@
   width: 400px;
   transition: all 0.4s ease-in-out;
   animation: glowPulse 2s infinite ease-in-out;
-  cursor: pointer;
+  cursor: default;
   padding-top: 3rem;
 }
 
@@ -35,7 +35,7 @@
   }
   .logorc{
     width: 300px;
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding-top: 0;
   
   }
