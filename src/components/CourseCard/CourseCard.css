@@ -21,6 +21,9 @@
   align-items: center;
   justify-content: center;
 }
+body.light .course-card > .header {
+  color: var(--primary-dark);
+}
 
 .course-card > .header > div {
   display: flex;
