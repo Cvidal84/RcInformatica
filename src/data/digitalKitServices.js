@@ -7,7 +7,7 @@ export const digitalKitServices = [
   {
     title: "Comercio Electrónico",
     description: "Creación de tiendas online personalizadas con gestión de productos, pagos y envíos.",
-    image: "https://images.unsplash.com/photo-1616401787684-196f3c7cbf7b?auto=format&fit=crop&w=800&h=600",
+    image: "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=800",
   },
   {
     title: "Gestión de Redes Sociales",
@@ -17,7 +17,7 @@ export const digitalKitServices = [
   {
     title: "Gestión de Clientes (CRM)",
     description: "Implantación de sistemas CRM para mejorar la relación con tus clientes y aumentar las ventas.",
-    image: "https://images.unsplash.com/photo-1581092919535-2089f96fbd3f?auto=format&fit=crop&w=800&h=600",
+    image: "https://www.eactivo.es/wp-content/uploads/2019/12/cartera-de-clientes.jpeg",
   },
   {
     title: "Business Intelligence y Analítica",
@@ -27,42 +27,42 @@ export const digitalKitServices = [
   {
     title: "Servicios y Herramientas de Oficina Virtual",
     description: "Soluciones colaborativas en la nube: correo, almacenamiento, videollamadas y gestión de tareas.",
-    image: "https://images.unsplash.com/photo-1611175694983-0439a4be5b8f?auto=format&fit=crop&w=800&h=600",
+    image: "https://localdigitalkit.com/wp-content/uploads/2023/05/oficina-virtual.jpg",
   },
   {
     title: "Gestión de Procesos",
     description: "Digitalización de procesos internos: contabilidad, facturación, almacén o recursos humanos.",
-    image: "https://images.unsplash.com/photo-1532619061781-9e1e5e52f1bf?auto=format&fit=crop&w=800&h=600",
+    image: "https://blog.engeman.com/wp-content/uploads/2021/10/sepa-todo-sobre-la-gestion-de-procesos-engeman.jpeg",
   },
   {
     title: "Factura Electrónica",
     description: "Sistemas de emisión y recepción de facturas digitales conforme a normativa española.",
-    image: "https://images.unsplash.com/photo-1588776814546-ec7d2442729b?auto=format&fit=crop&w=800&h=600",
+    image: "https://arraasesores.com/wp-content/uploads/2025/02/Verifactu.jpg",
   },
   {
     title: "Comunicaciones Seguras",
     description: "Implementación de redes VPN, cifrado de comunicaciones y protección de transferencias de datos.",
-    image: "https://images.unsplash.com/photo-1584438784894-089d6a62b8d5?auto=format&fit=crop&w=800&h=600",
+    image: "https://borboletamarketing.com/wp-content/uploads/2023/10/comunicaciones-seguras.jpg",
   },
   {
     title: "Ciberseguridad",
     description: "Protección contra amenazas informáticas: antivirus, firewall, antimalware y formación en seguridad.",
-    image: "https://images.unsplash.com/photo-1605902711834-8b8ccdcda1e7?auto=format&fit=crop&w=800&h=600",
+    image: "https://img.itmastersmag.com/wp-content/uploads/2025/04/23132522/ciberseguridad.jpg",
   },
   {
     title: "Presencia Avanzada en Internet",
     description: "SEO avanzado, marketing de contenidos y estrategias digitales para destacar en buscadores.",
-    image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9c?auto=format&fit=crop&w=800&h=600",
+    image: "https://www.lafabricadelseo.com/wp-content/uploads/2023/04/PResencia-Avanzada-en-Internet.jpg",
   },
   {
     title: "Marketplace",
     description: "Alta y gestión de productos en plataformas como Amazon, eBay o Etsy para aumentar tus ventas.",
-    image: "https://images.unsplash.com/photo-1603988363607-96a6e62f5f4e?auto=format&fit=crop&w=800&h=600",
+    image: "https://www.agenciaeplus.com.br/wp-content/uploads/2017/07/marketplace.jpg",
   },
   {
     title: "Gestión Documental",
     description: "Soluciones para digitalizar, almacenar y organizar documentos empresariales de forma segura.",
-    image: "https://images.unsplash.com/photo-1581091215367-59ab6f122d1c?auto=format&fit=crop&w=800&h=600",
+    image: "https://www.activaerp.com/static/uploads/gestor-documental.contenido.jpg",
   },
   {
     title: "Gestión de Inventario",
