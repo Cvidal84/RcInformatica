@@ -1,6 +1,6 @@
 export const digitalKitServices = [
   {
-    title: "Sitio Web y Presencia en Internet",
+    title: "Sitio Web y Presencia básica en Internet",
     description: "Diseño y desarrollo de páginas web profesionales para aumentar la visibilidad online de tu empresa.",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&h=600",
   },
@@ -25,11 +25,6 @@ export const digitalKitServices = [
     image: "https://images.unsplash.com/photo-1556155092-8707de31f9c4?auto=format&fit=crop&w=800&h=600",
   },
   {
-    title: "Servicios y Herramientas de Oficina Virtual",
-    description: "Soluciones colaborativas en la nube: correo, almacenamiento, videollamadas y gestión de tareas.",
-    image: "https://localdigitalkit.com/wp-content/uploads/2023/05/oficina-virtual.jpg",
-  },
-  {
     title: "Gestión de Procesos",
     description: "Digitalización de procesos internos: contabilidad, facturación, almacén o recursos humanos.",
     image: "https://blog.engeman.com/wp-content/uploads/2021/10/sepa-todo-sobre-la-gestion-de-procesos-engeman.jpeg",
@@ -38,6 +33,11 @@ export const digitalKitServices = [
     title: "Factura Electrónica",
     description: "Sistemas de emisión y recepción de facturas digitales conforme a normativa española.",
     image: "https://arraasesores.com/wp-content/uploads/2025/02/Verifactu.jpg",
+  },
+  {
+    title: "Servicios y Herramientas de Oficina Virtual",
+    description: "Soluciones colaborativas en la nube: correo, almacenamiento, videollamadas y gestión de tareas.",
+    image: "https://localdigitalkit.com/wp-content/uploads/2023/05/oficina-virtual.jpg",
   },
   {
     title: "Comunicaciones Seguras",
@@ -60,28 +60,28 @@ export const digitalKitServices = [
     image: "https://www.agenciaeplus.com.br/wp-content/uploads/2017/07/marketplace.jpg",
   },
   {
-    title: "Gestión Documental",
-    description: "Soluciones para digitalizar, almacenar y organizar documentos empresariales de forma segura.",
+    title: "Servicio de ciberseguridad gestionada",
+    description: "Protege tu empresa con monitorización, detección y respuesta ante amenazas digitales.",
     image: "https://www.activaerp.com/static/uploads/gestor-documental.contenido.jpg",
   },
   {
-    title: "Gestión de Inventario",
-    description: "Sistemas para el control de stock, pedidos, proveedores y logística automatizada.",
+    title: "Gestión de clientes con IA asociada",
+   description: "Optimiza la relación con tus clientes mediante inteligencia artificial para una atención más eficiente y personalizada.",
     image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&h=600",
   },
   {
-    title: "Reservas Online",
-    description: "Plataformas para gestionar reservas de servicios, citas o actividades desde la web.",
+    title: "Business Intelligence y Analitica e IA asociada",
+    description: "Toma decisiones inteligentes con análisis de datos automatizados y herramientas basadas en inteligencia artificial.",
     image: "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?auto=format&fit=crop&w=800&h=600",
   },
   {
-    title: "Formación Digital",
-    description: "Capacitación en competencias digitales para empleados: ofimática, ciberseguridad, redes sociales, etc.",
+    title: "Gestión de procesos con IA asociada",
+    description: "Automatiza y mejora tus procesos empresariales con inteligencia artificial para ganar eficiencia y control.",
     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&h=600",
   },
   {
-    title: "Desarrollo de Apps Móviles",
-    description: "Diseño de aplicaciones para iOS y Android adaptadas a las necesidades de tu negocio.",
+    title: "Puesto de trabajo seguro",
+    description: "Protege los dispositivos y datos de tu empresa con soluciones seguras y actualizadas.",
     image: "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&h=600",
   }
 ];
