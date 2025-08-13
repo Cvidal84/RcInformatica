@@ -9,6 +9,9 @@
   border: solid 3px var(--primary-dark);
   border-radius: 8px;
 }
+body.light .digital-card{
+  border: solid 3px rgb(9, 117, 117);
+}
 
 .digital-card > img {
   width: 100%;
@@ -25,7 +28,7 @@
 }
 
 body.light .digital-card > .header {
-    color: var(--primary-dark);
+    color: rgb(9, 117, 117)
 }
 
 @media (max-width: 770px) {

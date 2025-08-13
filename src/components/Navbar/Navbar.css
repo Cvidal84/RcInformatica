@@ -38,6 +38,10 @@ nav a:hover {
   color: var(--highlight);
 }
 
+body.light .divider{
+  color: rgb(9, 117, 117);
+}
+
 /* burguer menu */
 .hamburger {
   display: none;

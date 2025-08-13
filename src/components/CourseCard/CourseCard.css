@@ -9,6 +9,9 @@
   border: solid 3px var(--primary-dark);
   border-radius: 8px;
 }
+body.light .course-card{
+  border: solid 3px rgb(9, 117, 117);
+}
 
 .course-card img {
   width: 100%;
@@ -22,7 +25,7 @@
   justify-content: center;
 }
 body.light .course-card > .header {
-  color: var(--primary-dark);
+  color: rgb(9, 117, 117);
 }
 
 .course-card > .header > div {
@@ -42,4 +45,7 @@ body.light .course-card > .detail {
 
 .course-card > .detail > .tech {
   color: var(--primary-dark);
+}
+body.light .course-card > .detail > .tech{
+  color: rgb(9, 117, 117)
 }

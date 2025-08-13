@@ -9,7 +9,9 @@
   border: solid 3px var(--primary-dark);
   border-radius: 8px;
 }
-
+body.light .maintenance-card{
+  border: solid 3px rgb(9, 117, 117);
+}
 .maintenance-card > img {
   width: 100%;
   height: 250px;
@@ -24,7 +26,7 @@
   justify-content: center;
 }
 body.light .maintenance-card > .header {
-    color: var(--primary-dark);
+    color: rgb(9, 117, 117)
 }
 
 .detail {

@@ -1,7 +1,11 @@
 .divider {
-  border-bottom: 1px solid var(--divider);
+  border-bottom: solid 1px var(--divider);
   height: 1px;
   width: 100%;
   display: block;
   margin: 1rem 0;
+}
+
+body.light .divider{
+  border-bottom: solid 1px rgb(9, 117, 117);
 }
