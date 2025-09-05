@@ -11,9 +11,11 @@ footer > div {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  z-index: 1000;
 }
 .info {
   text-align: center;
+  z-index: 1000;
 }
 
 @media (max-width: 650px) {
