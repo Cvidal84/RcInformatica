@@ -10,6 +10,7 @@ export const KitDigital = () => {
     main.innerHTML = `
         <section class="digital">
         <h2>Servicios Kit Digital</h2>
+        <h2>✉️ kitdigital@rcinformatica.com</h2>
         ${Divider()}
         <div class="digitals-container"></div>
         </section>

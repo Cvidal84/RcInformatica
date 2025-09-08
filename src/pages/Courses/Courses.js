@@ -10,6 +10,7 @@ export const Courses = () => {
   main.innerHTML = `
     <section class="courses">
     <h2>Nuestros cursos</h2>
+    <h2>✉️ admin@rcinformatica.com</h2>
     ${Divider()}
     <div class="courses-container"></div>
     </section>`;

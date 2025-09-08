@@ -10,6 +10,7 @@ export const Maintenances = () => {
   main.innerHTML = `
     <section class="maintenances">
     <h2>Nuestros mantenimientos</h2>
+    <h2>✉️ admin@rcinformatica.com</h2>
     ${Divider()}
     <div class="maintenances-container"></div>
     </section>`;
