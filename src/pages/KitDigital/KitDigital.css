@@ -25,4 +25,7 @@
     .digital > h2 {
       text-align: center;
     }
+    .email {
+      font-size: 1.2em;
+    }
 }
