@@ -27,7 +27,7 @@ export const digitalKitServices = [
   {
     title: "Gestión de Procesos",
     description: "Digitalización de procesos internos: contabilidad, facturación, almacén o recursos humanos.",
-    image: "https://blog.engeman.com/wp-content/uploads/2021/10/sepa-todo-sobre-la-gestion-de-procesos-engeman.jpeg",
+    image: "https://www.claseejecutiva.uc.cl/wp-content/uploads/2022/05/procesos-gestion-de-procesos-que-es-un-proceso-que-es-la-gestion-de-procesos-w-1-min-1024x529.jpg",
   },
   {
     title: "Factura Electrónica",
@@ -52,7 +52,7 @@ export const digitalKitServices = [
   {
     title: "Presencia Avanzada en Internet",
     description: "SEO avanzado, marketing de contenidos y estrategias digitales para destacar en buscadores.",
-    image: "https://www.lafabricadelseo.com/wp-content/uploads/2023/04/PResencia-Avanzada-en-Internet.jpg",
+    image: "https://programa-kitdigital.es/wp-content/uploads/Presencia-Avanzada-en-Internet-66.jpg",
   },
   {
     title: "Marketplace",
