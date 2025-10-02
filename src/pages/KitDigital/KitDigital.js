@@ -14,6 +14,9 @@ export const KitDigital = () => {
         ${Divider()}
         <div class="digitals-container"></div>
         </section>
+        <div class="logoKD">
+            <img src="/images/logoKitDigital.jpg" alt"logo kit digital"/>
+        </div>
     `;
     const container = document.querySelector(".digitals-container");
     for (const digital of digitalKitServices){
