@@ -1,24 +1,15 @@
 import "./Blog.css";
 import { cleanPage } from "../../utils/cleanPage";
-
-const STORAGE_KEY = "rc_blog_posts";
-
-const getPosts = () => {
-  const posts = localStorage.getItem(STORAGE_KEY);
-  return posts ? JSON.parse(posts) : [];
-};
-
-const savePost = (post) => {
-  const posts = getPosts();
-  posts.unshift(post); // Add new post to the beginning
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(posts));
-};
-
-const deletePost = (id) => {
-  const posts = getPosts();
-  const updatedPosts = posts.filter((post) => post.id !== id);
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedPosts));
-};
+import { db } from "../../firebase/config";
+import {
+  collection,
+  addDoc,
+  deleteDoc,
+  doc,
+  onSnapshot,
+  query,
+  orderBy,
+} from "firebase/firestore";
 
 export const Blog = () => {
   const main = document.querySelector("main");
@@ -43,6 +34,7 @@ export const Blog = () => {
 
       <div id="postsList" class="posts-list">
         <!-- Posts will be injected here -->
+        <p style="text-align:center; color: #888;">Cargando publicaciones...</p>
       </div>
     </div>
 
@@ -102,8 +94,17 @@ export const Blog = () => {
     });
   };
 
-  const renderPosts = () => {
-    const posts = getPosts();
+  // Real-time listener for posts
+  const q = query(collection(db, "posts"), orderBy("date", "desc"));
+  const unsubscribe = onSnapshot(q, (snapshot) => {
+    const posts = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+
+    if (posts.length === 0) {
+      postsList.innerHTML =
+        '<p style="text-align:center; color: #888;">No hay publicaciones aún.</p>';
+      return;
+    }
+
     postsList.innerHTML = posts
       .map(
         (post) => `
@@ -131,19 +132,23 @@ export const Blog = () => {
     // Add event listeners to delete buttons
     document.querySelectorAll(".delete-btn").forEach((btn) => {
       btn.addEventListener("click", async (e) => {
-        const id = Number(e.target.dataset.id);
+        const id = e.target.dataset.id; // Firestore IDs are strings
         if (confirm("¿Seguro que quieres borrar esta publicación?")) {
           const password = await askPassword();
           if (password === "combrombo000666") {
-            deletePost(id);
-            renderPosts();
+            try {
+              await deleteDoc(doc(db, "posts", id));
+            } catch (error) {
+              console.error("Error deleting document: ", error);
+              alert("Error al borrar la publicación.");
+            }
           } else if (password !== null) {
             alert("Contraseña incorrecta");
           }
         }
       });
     });
-  };
+  });
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -159,17 +164,18 @@ export const Blog = () => {
     const link = document.getElementById("postLink").value;
 
     const newPost = {
-      id: Date.now(),
       title,
       content,
       link,
       date: new Date().toISOString(),
     };
 
-    savePost(newPost);
-    form.reset();
-    renderPosts();
+    try {
+      await addDoc(collection(db, "posts"), newPost);
+      form.reset();
+    } catch (e) {
+      console.error("Error adding document: ", e);
+      alert("Error al publicar el artículo.");
+    }
   });
-
-  renderPosts();
 };
