@@ -26,11 +26,11 @@ export const setupHamburger = () => {
   });
   //cierra el menu al hacer click
   const links = navLinks.querySelectorAll("a");
-  links.forEach(link => {
+  links.forEach((link) => {
     link.addEventListener("click", () => {
       navLinks.classList.remove("show");
-    })
-  })
+    });
+  });
 };
 
 export const Navbar = () => `
@@ -53,9 +53,11 @@ export const Navbar = () => `
         <a href="#" id="kit-digital">Kit Digital</a>
     </li>
     <li>
+        <a href="#" id="bloglink">Blog</a>
+    </li>
+    <li>
       <label><input value="on" name="dummy" type="checkbox" id="themeBtn"></label>
     </li>
 </ul>
 </nav>
 `;
-
